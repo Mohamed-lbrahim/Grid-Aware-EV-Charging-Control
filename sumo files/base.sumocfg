@@ -1,0 +1,15 @@
+<configuration>
+    <input>
+        <net-file value="erlangen.net.xml"/>
+        <additional-files value="ev_type.add.xml,chargingStations.add.xml"/>
+        <route-files value="ev_routes.rou.xml"/>
+    </input>
+    
+   <processing>
+	<time-to-teleport value="1800"/>
+</processing>
+
+    <output>
+        <chargingstations-output value="charging_results.xml"/>
+    </output>
+</configuration>

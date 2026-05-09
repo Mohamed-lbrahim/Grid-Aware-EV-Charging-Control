@@ -1,0 +1,37 @@
+<additional>
+  <vTypeDistribution id="EV_dist">
+
+    <vType id="EV_low" vClass="passenger" probability="1.0"
+           accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="25">
+
+      <!-- Devices -->
+      <param key="has.rerouting.device" value="true"/>
+      <param key="has.battery.device" value="true"/>
+      <param key="has.stationfinder.device" value="true"/>
+
+      <!-- Rerouting -->
+      <param key="device.rerouting.period" value="1800"/>
+
+      <param key="device.battery.capacity" value="50000"/>
+      <param key="device.battery.chargeLevel" value="20150"/>
+      <param key="device.battery.chargingStation" value="true"/>
+
+      <param key="device.battery.constantPowerIntake" value="12500"/>
+            <!-- Station Finder -->
+
+      <param key="device.stationfinder.radius" value="20000"/>
+      <param key="device.stationfinder.maxEuclideanDistance" value="5000"/>
+      <param key="device.stationfinder.repeat" value="1800"/>
+      <param key="device.stationfinder.needToChargeLevel" value="0.40"/>
+      <param key="device.stationfinder.saturatedChargeLevel" value="0.90"/>
+      <param key="device.stationfinder.emptyThreshold" value="0.0"/>
+      <param key="device.stationfinder.waitForCharge" value="1800"/>
+      <param key="charging.waitingTime.weight" value="10"/>
+      <param key="charging.relfreespace.weight" value="2"/>
+
+      <param key="device.stationfinder.checkEnergyForRoute" value="false"/>
+
+    </vType>
+
+  </vTypeDistribution>
+</additional>
